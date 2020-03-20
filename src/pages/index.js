@@ -1,21 +1,29 @@
-import React from "react"
-import { Link } from "gatsby"
-
-import Layout from "../components/layout"
-import Image from "../components/image"
-import SEO from "../components/seo"
+/** @jsx jsx */
+import { jsx, Flex, Styled } from "theme-ui"
+import { PageLayout } from "../components/PageLayout"
+import { Hero } from "../components/Hero"
+import { Mission } from "../components/Mission"
+import { Classes } from "../components/Classes"
+import { Banner } from "../components/Banner"
 
 const IndexPage = () => (
-  <Layout>
-    <SEO title="Home" />
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-      <Image />
-    </div>
-    <Link to="/page-2/">Go to page 2</Link>
-  </Layout>
+  <div
+    sx={{
+      display: "flex",
+      flexDirection: "column",
+      height: "100vh",
+      width: "100vw",
+      fontFamily: "arial",
+      maxWidth: "100vw",
+    }}
+  >
+    <PageLayout>
+      <Hero />
+      <Mission />
+      <Classes />
+      <Banner />
+    </PageLayout>
+  </div>
 )
 
 export default IndexPage

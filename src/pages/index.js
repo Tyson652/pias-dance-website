@@ -7,23 +7,12 @@ import { Classes } from "../components/Classes"
 import { Banner } from "../components/Banner"
 
 const IndexPage = () => (
-  <div
-    sx={{
-      display: "flex",
-      flexDirection: "column",
-      height: "100vh",
-      width: "100vw",
-      fontFamily: "arial",
-      maxWidth: "100vw",
-    }}
-  >
-    <PageLayout>
-      <Hero />
-      <Mission />
-      <Classes />
-      <Banner />
-    </PageLayout>
-  </div>
+  <PageLayout>
+    <Hero />
+    <Mission />
+    <Classes />
+    <Banner />
+  </PageLayout>
 )
 
 export default IndexPage

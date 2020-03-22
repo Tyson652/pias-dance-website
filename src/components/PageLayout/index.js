@@ -25,6 +25,8 @@ export const PageLayout = ({ children }) => {
         height: "100vh",
         width: "100vw",
         maxWidth: "100vw",
+        backgroundColor: "#fdf8f7",
+        fontFamily: "arial",
       }}
     >
       <Box

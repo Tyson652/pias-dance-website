@@ -55,6 +55,12 @@ export default {
       fontSize: [30, 50],
       margin: "40px 0 20px 0",
     },
+    h5: {
+      fontFamily: "heading",
+      fontSize: [20, 30],
+      margin: "20px 0 20px 0",
+      textAlign: "left",
+    },
     p: {
       fontSize: [18, 20],
       padding: "0 40px 0 40px",

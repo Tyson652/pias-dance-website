@@ -2,7 +2,7 @@
 import { jsx, Flex, Styled, Box } from "theme-ui"
 import { PageLayout } from "../components/PageLayout"
 import timetableImg from "../img/timetable.png"
-import SimpleMap from "../components/Map"
+import MapContainer from "../components/Map"
 
 const timetable = () => (
   <PageLayout>
@@ -15,7 +15,7 @@ const timetable = () => (
       }}
     >
       <Styled.h4 sx={{ marginBottom: 0 }}>Timetable</Styled.h4>
-      <Flex sx={{ border: "2px solid red", justifyContent: "center" }}>
+      <Flex sx={{ justifyContent: "center", marginBottom: [10, 25, 50] }}>
         <img
           src={timetableImg}
           sx={{
@@ -26,8 +26,9 @@ const timetable = () => (
           }}
         />
       </Flex>
-      <Box sx={{ height: 400, width: 400 }}>
-        <SimpleMap />
+
+      <Box sx={{ height: 350, width: "100%", position: "relative" }}>
+        <MapContainer height="350px" width="100%" />
       </Box>
     </Flex>
   </PageLayout>
